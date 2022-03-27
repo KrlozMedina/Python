@@ -27,9 +27,9 @@ for nameDir in peopleList:
 
 #cv2.destroyAllWindows
 
-face_recognizer = cv2.face.EigenFaceRecognizer_create() #pip install opencv-contrib-python
+face_recognizer = cv2.face.LBPHFaceRecognizer_create() #pip install opencv-contrib-python
 print("Entrenando...")
 face_recognizer.train(facesData, np.array(labels))
 
-face_recognizer.write('DetectarRostros/modeloEigenFace.xml')
+face_recognizer.write('DetectarRostros/modelo.xml')
 print("Modelo almacenado...")

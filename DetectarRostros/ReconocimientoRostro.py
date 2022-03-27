@@ -7,9 +7,9 @@ dataPath = 'C:/Users/charl/OneDrive/Documents/Proyectos/Python/DetectarRostros/D
 
 imagePaths = os.listdir(dataPath)
 
-face_recognizer = cv2.face.EigenFaceRecognizer_create()
+face_recognizer = cv2.face.LBPHFaceRecognizer_create()
 
-face_recognizer.read('DetectarRostros/modeloEigenFace.xml')
+face_recognizer.read('DetectarRostros/modelo.xml')
 
 cap = cv2.VideoCapture(0, cv2.CAP_DSHOW)
 
