@@ -3,15 +3,15 @@ import os
 
 #dataPath = 'C:/Users/krlozmedina/Documents/Proyectos/Python/DataFacial'    #MAC
 # dataPath = 'C:/Users/camedina/Documents/Proyectos/Python/DataFacial'   #DELL
-dataPath = 'C:/Users/charl/OneDrive/Documents/Proyectos/Python/DetectarRostros/DataFacial' #ASUS
-
+#dataPath = 'C:/Users/charl/OneDrive/Documents/Proyectos/Python/DetectarRostros/DataFacial' #ASUS
+dataPath = '/home/krlozmedina/Documentos/Proyectos/Python/DetectarRostros/DataFacial'   #Toshiba
 imagePaths = os.listdir(dataPath)
 
 face_recognizer = cv2.face.LBPHFaceRecognizer_create()
 
 face_recognizer.read('DetectarRostros/modelo.xml')
 
-cap = cv2.VideoCapture(0, cv2.CAP_DSHOW)
+cap = cv2.VideoCapture(0)
 
 faceClassif = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
 
