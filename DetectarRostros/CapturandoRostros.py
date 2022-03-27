@@ -3,8 +3,9 @@ import os
 import imutils
 
 personName = 'Krloz'
-#dataPath = 'C:/Users/krlozmedina/Documents/Proyectos/Python/DataFacial'    #MAC
-dataPath = 'C:/Users/camedina/Documents/Proyectos/Python/DataFacial'   #DELL
+# dataPath = 'C:/Users/krlozmedina/Documents/Proyectos/Python/DataFacial'    #MAC
+# dataPath = 'C:/Users/camedina/Documents/Proyectos/Python/DataFacial'   #DELL
+dataPath = 'C:/Users/charl/OneDrive/Documents/Proyectos/Python/DetectarRostros/DataFacial' #ASUS
 personPath = dataPath + '/' + personName
 
 if not os.path.exists(personPath):

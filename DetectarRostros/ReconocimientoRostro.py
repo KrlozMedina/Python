@@ -2,12 +2,14 @@ import cv2
 import os
 
 #dataPath = 'C:/Users/krlozmedina/Documents/Proyectos/Python/DataFacial'    #MAC
-dataPath = 'C:/Users/camedina/Documents/Proyectos/Python/DataFacial'   #DELL
+# dataPath = 'C:/Users/camedina/Documents/Proyectos/Python/DataFacial'   #DELL
+dataPath = 'C:/Users/charl/OneDrive/Documents/Proyectos/Python/DetectarRostros/DataFacial' #ASUS
+
 imagePaths = os.listdir(dataPath)
 
 face_recognizer = cv2.face.EigenFaceRecognizer_create()
 
-face_recognizer.read('modeloEigenFace.xml')
+face_recognizer.read('DetectarRostros/modeloEigenFace.xml')
 
 cap = cv2.VideoCapture(0, cv2.CAP_DSHOW)
 

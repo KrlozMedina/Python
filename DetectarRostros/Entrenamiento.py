@@ -1,10 +1,10 @@
-from email.mime import image
 import cv2
 import os
 import numpy as np
 
 #dataPath = 'C:/Users/krlozmedina/Documents/Proyectos/Python/DataFacial'    #MAC
-dataPath = 'C:/Users/camedina/Documents/Proyectos/Python/DataFacial'   #DELL
+# dataPath = 'C:/Users/camedina/Documents/Proyectos/Python/DataFacial'   #DELL
+dataPath = 'C:/Users/charl/OneDrive/Documents/Proyectos/Python/DetectarRostros/DataFacial' #ASUS
 peopleList = os.listdir(dataPath)
 
 labels = []
@@ -31,5 +31,5 @@ face_recognizer = cv2.face.EigenFaceRecognizer_create() #pip install opencv-cont
 print("Entrenando...")
 face_recognizer.train(facesData, np.array(labels))
 
-face_recognizer.write('modeloEigenFace.xml')
+face_recognizer.write('DetectarRostros/modeloEigenFace.xml')
 print("Modelo almacenado...")
