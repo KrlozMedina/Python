@@ -2,10 +2,10 @@ import cv2
 import os
 import numpy as np
 
-#dataPath = 'C:/Users/krlozmedina/Documents/Proyectos/Python/DataFacial'    #MAC
+dataPath = '/Users/krlozmedina/Documents/Proyectos/Python/DetectarRostros/DataFacial'    #MAC
 #dataPath = 'C:/Users/camedina/Documents/Proyectos/Python/DataFacial'   #DELL
 #dataPath = 'C:/Users/charl/OneDrive/Documents/Proyectos/Python/DetectarRostros/DataFacial' #ASUS
-dataPath = '/home/krlozmedina/Documentos/Proyectos/Python/DetectarRostros/DataFacial'   #Toshiba
+#dataPath = '/home/krlozmedina/Documentos/Proyectos/Python/DetectarRostros/DataFacial'   #Toshiba
 peopleList = os.listdir(dataPath)
 
 labels = []

@@ -3,16 +3,16 @@ import os
 import imutils
 
 personName = 'Krloz'
-# dataPath = 'C:/Users/krlozmedina/Documents/Proyectos/Python/DataFacial'    #MAC
-# dataPath = 'C:/Users/camedina/Documents/Proyectos/Python/DataFacial'   #DELL
-dataPath = 'C:/Users/charl/OneDrive/Documents/Proyectos/Python/DetectarRostros/DataFacial' #ASUS
+dataPath = '/Users/krlozmedina/Documents/Proyectos/Python/DetectarRostros/DataFacial'    #MAC
+#dataPath = 'C:/Users/camedina/Documents/Proyectos/Python/DataFacial'   #DELL
+#dataPath = 'C:/Users/charl/OneDrive/Documents/Proyectos/Python/DetectarRostros/DataFacial' #ASUS
 personPath = dataPath + '/' + personName
 
 if not os.path.exists(personPath):
     print('Capeta creada: ', personPath)
     os.makedirs(personPath)
 
-cap = cv2.VideoCapture(0, cv2.CAP_DSHOW)
+cap = cv2.VideoCapture(0)
 
 faceClassif = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
 count = 0
