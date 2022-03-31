@@ -43,7 +43,7 @@ while True:
 
             cv2.putText(frame, '{}'.format(result), (x, y-5), 1, 1.3, (255, 255, 0), 1, cv2.LINE_AA)
 
-            if 7700 < result[1] < 8100:
+            if 0 < result[1] < 3500:
                 cv2.putText(frame, '{}'.format(imagePaths[result[0]]), (x, y-25), 2, 1.1, (0, 255, 0), 1, cv2.LINE_AA)
                 #cv2.rectangle(frame, (x, y), (x+w, y+h), (0, 255, 0), 2)
                 cv2.rectangle(frame, cord[0], cord[1], (0, 255, 0), 2)
